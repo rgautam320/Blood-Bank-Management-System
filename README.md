@@ -6,6 +6,23 @@
 2. SQL Database
 3. Bootstrap
 
+## List of Cloud Services Used
+
+### 1. Azure Blob Storage:
+
+We are storing images of patients and donors in Azure Blob Storage which is a IAAS Service provided by Azure.
+
+### 2. MySQL Database Server on Azure 
+
+We have created a MySQL Database Server on Azure. So, everything we do in our application gets saved in the cloud database. It is a PAAS provided by Azure. 
+
+### 3. Azure DevOps 
+
+We are using Azure DevOps to manage our codes and also we have set up a pipeline for continuous deployment. It is a SAAS provided by Azure.
+
+### 4. Azure Web App Service
+We have created a web application on Azure where we are hosting our application. It is a PAAS provided by Azure. 
+
 ## Live Link: [URL](https://blood-bank-management-system.azurewebsites.net)
 
 ## Project Description
