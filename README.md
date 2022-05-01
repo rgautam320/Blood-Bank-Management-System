@@ -1,12 +1,12 @@
 # Blood Bank Management System in Django
 
-## Tech Stack Used:
+## TECH STACK USED
 
 1. Django
 2. MySQL Database
 3. Bootstrap
 
-## List of Cloud Services Used
+## LIST OF CLOUD SERVICES USED
 
 ### 1. Azure Blob Storage:
 
@@ -26,7 +26,7 @@ We have created a web application on Azure where we are hosting our application.
 
 ## Live Link: [URL](https://blood-bank-management-system.azurewebsites.net)
 
-## Project Description
+## PROJECT DESCRIPTION
 
 We have used Django along with SQL Database. For Image storage, we are azure Azure Blog.
 
@@ -66,6 +66,25 @@ py manage.py createsuperuser
 -   After Login, Can see number of blood request Made, Approved, Pending, Rejected by Admin on their dashboard.
 -   Patient can request for blood of specific blood group and unit from blood stock.
 -   Patient can see their blood request history with status (Pending, Approved, Rejected).
+
+## HOW TO RUN THIS PROJECT LOCALLY
+- Install Python(3.7.6) (Dont Forget to Tick Add to Path while installing Python)
+- Download This Project Zip Folder and Extract it
+- Move to project folder in Terminal. Then run following Commands :
+
+```
+pip install -r requirements.txt
+```
+
+```
+py manage.py makemigrations
+py manage.py migrate
+py manage.py runserver
+```
+- Now go to the following URL in your browser
+```
+http://127.0.0.1:8000/
+```
 
 ## Sample Screenshots
 
