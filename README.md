@@ -3,7 +3,7 @@
 ## Tech Stack Used:
 
 1. Django
-2. SQL Database
+2. MySQL Database
 3. Bootstrap
 
 ## List of Cloud Services Used
@@ -12,22 +12,60 @@
 
 We are storing images of patients and donors in Azure Blob Storage which is a IAAS Service provided by Azure.
 
-### 2. MySQL Database Server on Azure 
+### 2. MySQL Database Server on Azure
 
-We have created a MySQL Database Server on Azure. So, everything we do in our application gets saved in the cloud database. It is a PAAS provided by Azure. 
+We have created a MySQL Database Server on Azure. So, everything we do in our application gets saved in the cloud database. It is a PAAS provided by Azure.
 
-### 3. Azure DevOps 
+### 3. Azure DevOps / GitHub
 
-We are using Azure DevOps to manage our codes and also we have set up a pipeline for continuous deployment. It is a SAAS provided by Azure.
+We are using Azure DevOps and GitHub to manage our codes and also we have set up a pipeline for continuous deployment. It is a SAAS provided by Azure.
 
 ### 4. Azure Web App Service
-We have created a web application on Azure where we are hosting our application. It is a PAAS provided by Azure. 
+
+We have created a web application on Azure where we are hosting our application. It is a PAAS provided by Azure.
 
 ## Live Link: [URL](https://blood-bank-management-system.azurewebsites.net)
 
 ## Project Description
 
 We have used Django along with SQL Database. For Image storage, we are azure Azure Blog.
+
+### Admin
+
+-   Create Admin account using following command
+
+```
+py manage.py createsuperuser
+```
+
+-   After Login, can see Unit of blood of each blood group available, Number Of Donor, Number of blood request, Number of approved request, Total Unit of blood on Dashboard.
+-   Can View, Update, Delete Donor.
+-   Can View, Update, Delete Patient.
+-   Can View Donation Request made by donor and can approve or reject that request based on disease of donor.
+-   If Donation Request approved by admin then that unit of blood added to blood stock of that blood group.
+-   If Donation Request rejected by admin then 0 unit of blood added to stock.
+-   Can View Blood Request made by donor / patient and can approve or reject that request.
+-   If Blood Request approved by admin then that unit of blood reduced from blood stock of that blood group.
+-   If Blood Request rejected by admin then 0 unit of blood reduced from stock.
+-   Can see history of blood request.
+-   Can Update Unit Of Particular Blood Group.
+
+### Donor
+
+-   Donor can create account by providing basic details.
+-   After Login, Donor can donate blood, After approval from admin only, blood will be added to blood stock.
+-   Donor can see their donation history with status (Pending, Approved, Rejected).
+-   Donor can also request for blood from blood stock.
+-   Donor can see their blood request history with status.
+-   Donor can see number of blood request Made, Approved, Pending, Rejected by Admin on their dashboard.
+    > **_NOTE:_** Donor can donate blood and can also request for blood.
+
+### Patient
+
+-   Create account (No Approval Required By Admin, Can Login After Signup)
+-   After Login, Can see number of blood request Made, Approved, Pending, Rejected by Admin on their dashboard.
+-   Patient can request for blood of specific blood group and unit from blood stock.
+-   Patient can see their blood request history with status (Pending, Approved, Rejected).
 
 ## Sample Screenshots
 
