@@ -6,6 +6,8 @@
 2. MySQL Database
 3. Bootstrap
 
+## Live Link: [URL](https://blood-bank-management-system.azurewebsites.net)
+
 ## LIST OF CLOUD SERVICES USED
 
 ### 1. Azure Blob Storage:
@@ -23,8 +25,6 @@ We are using Azure DevOps and GitHub to manage our codes and also we have set up
 ### 4. Azure Web App Service
 
 We have created a web application on Azure where we are hosting our application. It is a PAAS provided by Azure.
-
-## Live Link: [URL](https://blood-bank-management-system.azurewebsites.net)
 
 ## PROJECT DESCRIPTION
 
