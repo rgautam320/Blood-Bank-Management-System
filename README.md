@@ -28,7 +28,7 @@ We have created a web application on Azure where we are hosting our application.
 
 ## PROJECT DESCRIPTION
 
-We have used Django along with SQL Database. For Image storage, we are azure Azure Blog.
+We have used Django along with SQL Database. For Image storage, we are azure Azure Blob.
 
 ### Admin
 
